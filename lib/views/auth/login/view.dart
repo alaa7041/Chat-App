@@ -30,7 +30,7 @@ class LoginView extends StatelessWidget {
             padding: EdgeInsets.all(20),
             children: [
               Text(
-                "Enter Your Phone Number",
+                "Enter Your Phone Number her",
                 style: TextStyle(
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
