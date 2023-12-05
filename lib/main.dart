@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:project2/views/auth/confirm_code/view.dart';
 import 'package:project2/views/auth/login/view.dart';
+import 'package:project2/views/auth/register/view.dart';
 import 'package:project2/views/auth/splash_screen/view.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -21,11 +23,11 @@ class MyApp extends StatelessWidget {
       builder: (context, child) => MaterialApp(
         title: "Chat App",
         navigatorKey: navigatorKey,
-        home: SplashScreen(),
+        home: LoginView(),
         theme: ThemeData(
           primarySwatch: getMaterialColor(),
           scaffoldBackgroundColor: Colors.white,
-           appBarTheme: AppBarTheme(
+          appBarTheme: AppBarTheme(
              backgroundColor: Colors.white,
              elevation: 0,
              titleTextStyle: TextStyle(
@@ -71,6 +73,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
+
       ),
     );
   }

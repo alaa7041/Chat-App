@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:project2/views/auth/register/view.dart';
+import 'package:project2/core/logic/helper_methods.dart';
+import 'package:project2/views/auth/login/view.dart';
 import '../../../core/design/app_button.dart';
 import '../../../core/design/app_input.dart';
-import '../../../core/logic/helper_methods.dart';
 
-class LoginView extends StatelessWidget {
-  const LoginView({super.key});
+class RegisterView extends StatelessWidget {
+  const RegisterView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,22 +32,12 @@ class LoginView extends StatelessWidget {
             padding: EdgeInsets.all(20),
             children: [
               Text(
-                "Login to your Account",
+                "Create New Account",
                 style: TextStyle(
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.center,
-              ),
-              SizedBox(
-                height: 8,
-              ),
-              Text(
-                "Please confirm your country code and enter\n your phone number",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 16.5,
-                ),
               ),
               SizedBox(
                 height: 30,
@@ -69,10 +59,8 @@ class LoginView extends StatelessWidget {
                 height: 58,
               ),
               AppButton(
-                text: "Login",
-                onPress: () {
-
-                },
+                text: "Continue",
+                onPress: () {},
               ),
               SizedBox(
                 height: 115,
@@ -86,10 +74,10 @@ class LoginView extends StatelessWidget {
                   ),),
                   TextButton(
                     onPressed: () {
-                      navigateTo(RegisterView());
+                      navigateTo(LoginView());
                     },
                     child: Text(
-                      "Sign up",
+                      "Sign in",
                       style: TextStyle(color: Theme.of(context).primaryColor),
                     ),
                   ),

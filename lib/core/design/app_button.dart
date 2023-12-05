@@ -16,10 +16,9 @@ class AppButton extends StatelessWidget {
     }
     return FilledButton(
       onPressed: onPress,
-      child: Text(text),
+      child: Text(text) ,
       style: FilledButton.styleFrom(fixedSize: Size(327, 54),),
-
     );
   }
 }
-
+//Text(text)
